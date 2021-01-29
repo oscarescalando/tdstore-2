@@ -1,0 +1,302 @@
+[{
+        "id": "C0001",
+        "title": "Solo",
+        "description": "",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "cafe",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "C0002",
+        "title": "Cortado",
+        "description": "",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "cafe",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "C0003",
+        "title": "Café con leche",
+        "description": "",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "cafe",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "C0004",
+        "title": "Manchado",
+        "description": "",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "cafe",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "C0005",
+        "title": "Carajillo",
+        "description": "",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "cafe",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "C0006",
+        "title": "Belmonte",
+        "description": "",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "cafe",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "C0007",
+        "title": "Americano",
+        "description": "",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "cafe",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "C0008",
+        "title": "Bombón",
+        "description": "",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "cafe-especial",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "CE001",
+        "title": "Latte machiato Tiramisu avellana chocolate",
+        "description": "",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "cafe-especial",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "CE002",
+        "title": "Cappuchino con cacao",
+        "description": "(elegir entre sabores: Avellana, tiramisú o chocolate)",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "cafe-especial",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "CE003",
+        "title": "Asiático del rincón de La Vieja Cuba",
+        "description": "(elegir entre sabores: chocolate o caramelo)",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "cafe-especial",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "CE004",
+        "title": "Mocachino con sabor a salsa chocolate y carameloa",
+        "description": "",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "cafe-especial",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "I0001",
+        "title": "Manzanilla",
+        "description": "",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "infusion",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "I0002",
+        "title": "Poleo",
+        "description": "",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "infusion",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "I0003",
+        "title": "Tila",
+        "description": "",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "infusion",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    }
+
+
+]
