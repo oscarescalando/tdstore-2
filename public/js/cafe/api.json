@@ -5,8 +5,8 @@
         "info": [
             ""
         ],
-        "image": false,
-        "image_path": "jewels/JANI0001.jpg",
+        "image": true,
+        "image_path": "solo.jpg",
         "category": "cafe",
         "price": 1500,
         "variable cost": false,
@@ -25,8 +25,8 @@
         "info": [
             ""
         ],
-        "image": false,
-        "image_path": "jewels/JANI0001.jpg",
+        "image": true,
+        "image_path": "cortado.jpg",
         "category": "cafe",
         "price": 1500,
         "variable cost": false,
@@ -45,8 +45,8 @@
         "info": [
             ""
         ],
-        "image": false,
-        "image_path": "jewels/JANI0001.jpg",
+        "image": true,
+        "image_path": "con-leche.jpg",
         "category": "cafe",
         "price": 1500,
         "variable cost": false,
@@ -65,8 +65,8 @@
         "info": [
             ""
         ],
-        "image": false,
-        "image_path": "jewels/JANI0001.jpg",
+        "image": true,
+        "image_path": "manchado.jpg",
         "category": "cafe",
         "price": 1500,
         "variable cost": false,
@@ -85,8 +85,8 @@
         "info": [
             ""
         ],
-        "image": false,
-        "image_path": "jewels/JANI0001.jpg",
+        "image": true,
+        "image_path": "carajillo.jpg",
         "category": "cafe",
         "price": 1500,
         "variable cost": false,
@@ -105,8 +105,8 @@
         "info": [
             ""
         ],
-        "image": false,
-        "image_path": "jewels/JANI0001.jpg",
+        "image": true,
+        "image_path": "belmonte.jpg",
         "category": "cafe",
         "price": 1500,
         "variable cost": false,
@@ -125,8 +125,8 @@
         "info": [
             ""
         ],
-        "image": false,
-        "image_path": "jewels/JANI0001.jpg",
+        "image": true,
+        "image_path": "americano.jpg",
         "category": "cafe",
         "price": 1500,
         "variable cost": false,
@@ -145,8 +145,8 @@
         "info": [
             ""
         ],
-        "image": false,
-        "image_path": "jewels/JANI0001.jpg",
+        "image": true,
+        "image_path": "bombon.jpg",
         "category": "cafe-especial",
         "price": 1500,
         "variable cost": false,
@@ -165,8 +165,8 @@
         "info": [
             ""
         ],
-        "image": false,
-        "image_path": "jewels/JANI0001.jpg",
+        "image": true,
+        "image_path": "LatteMacchiatto.jpg",
         "category": "cafe-especial",
         "price": 1500,
         "variable cost": false,
@@ -185,8 +185,8 @@
         "info": [
             ""
         ],
-        "image": false,
-        "image_path": "jewels/JANI0001.jpg",
+        "image": true,
+        "image_path": "Cappuccino1.jpg",
         "category": "cafe-especial",
         "price": 1500,
         "variable cost": false,
@@ -205,8 +205,8 @@
         "info": [
             ""
         ],
-        "image": false,
-        "image_path": "jewels/JANI0001.jpg",
+        "image": true,
+        "image_path": "asiatico.jpg",
         "category": "cafe-especial",
         "price": 1500,
         "variable cost": false,
@@ -225,8 +225,8 @@
         "info": [
             ""
         ],
-        "image": false,
-        "image_path": "jewels/JANI0001.jpg",
+        "image": true,
+        "image_path": "moccahino.jpg",
         "category": "cafe-especial",
         "price": 1500,
         "variable cost": false,
@@ -296,7 +296,188 @@
         }],
         "order": 1,
         "extra": "url"
+    },
+
+    {
+        "id": "IE001",
+        "title": "Frutos del Bosque",
+        "description": "",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "infusion-especial",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "IE002",
+        "title": "Flor del Desierto",
+        "description": "",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "infusion-especial",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "IE003",
+        "title": "Jengibre Limón",
+        "description": "",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "infusion-especial",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "T0001",
+        "title": "Té",
+        "description": "",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "te",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "T0002",
+        "title": "Té Verde",
+        "description": "",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "te",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "T0003",
+        "title": "Té Rojo",
+        "description": "",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "te",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "TE001",
+        "title": "Té Canela",
+        "description": "",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "te-especial",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "TE002",
+        "title": "Té Jardín del Edén",
+        "description": "",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "te-especial",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "TE003",
+        "title": "Té Chai",
+        "description": "",
+        "info": [
+            ""
+        ],
+        "image": false,
+        "image_path": "jewels/JANI0001.jpg",
+        "category": "te-especial",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
     }
+
 
 
 ]

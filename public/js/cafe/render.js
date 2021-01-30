@@ -1,79 +1,39 @@
-export function renderStoreListFromMap(list, map) {
-    cleanStoreList()
-    list.forEach(storeId => renderElement(map.get(storeId)))
-}
-
 function renderElement(store) {
     const element = buildElement(store)
-    window.container.append(element)
+    elementDiv.append(element)
 }
+
+let elementDiv = null;
 
 function buildElement({ title, description, image_path, image, category, id, price, info, order }) {
 
-    let image_div = '';
+    let style = '';
+    let heightImg = '';
 
     if (image) {
-        image_div = `
-              <div class="bg-white md:rounded-r-none rounded-lg">
-                  <img loading="lazy" class=" object-cover object-left w-full h-full rounded-lg md:w-56 md:h-full md:rounded-r-none" src="images/${image_path}" alt="${title}">
-              </div>
-          `;
-
+        style = `style="background-image: url('images/la_vieja_cuba/catalogo/${image_path}')"`
+        heightImg = 'h-56';
     }
 
-    const template1 = `
-      
-       <div class="mx-2 mt-4 rounded-lg md:mx-0 md:w-1/2 md:flex md:bg-white ">
-          
-                   ${image_div}
-  
-                  <div class="relative  p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:bg-transparent">
-                      <h2 class="text-xl font-semibold tracking-tight text-base uppercase">${title} </h2>
-                      <p class="mt-2 leading-snug text-gray-700 ">
-                      ${description}
-                      </p>
-                     
-                      <div class="mt-2 text-lg font-semibold text-right text-base">${price}</div>
-                     
-                  </div>
-          </div>`;
+    let btnWhatsapp = `
+        <a class="p-2 mx-5 -mb-4 text-white bg-blue-600 rounded-full hover:bg-blue-500 focus:outline-none focus:bg-blue-500" target="_blank"
+        href="https://api.whatsapp.com/send?phone=34677695267&text=*Hola!*%0D%0AEstoy interesado en el Producto%3A%0D%0A*${title}*%0D%0A">
+        <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+        </a>
+    `;
 
-    const template2 = `
-      <div class="container mx-auto md:flex md:flex-wrap w-full mt-4" >
-              <div class="flex max-w bg-white shadow-lg rounded-lg overflow-hidden">
-                  <div class="w-1/2 bg-cover h-56" style="background-image: url('../images/${image_path}')">
-                  </div> 
-                  <div class="w-1/2 p-4">
-                  <h1 class="text-gray-900 font-bold text-2xl">${title}</h1>
-                  <p class="mt-2 text-gray-600 text-sm">${description}</p>
-                  <div class="flex item-center mt-2">
-                      
-                  </div>
-                  <div class="flex item-center justify-between mt-3">
-                      <h1 class="text-gray-700 font-bold text-xl">$ ${price}</h1>
-                      <button class="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded">Add to Card</button>
-                  </div>
-                  </div>
-              </div>
-  
-          </div>
-      `;
 
     const template = `
-          <div class="max-w bg-white shadow-lg rounded-lg overflow-hidden my-10 md:w-1/2 md:mx-1">
-                  <div class="px-4 py-2 bg-gray-900">
-                      <h1 class="text-gray-200 font-bold text-3xl uppercase">${title}</h1>
-                      <p class="text-gray-200 text-sm mt-1">Lorem ipsum facere recusandae voluptatibus</p>
-                  </div>
-                  <img loading="lazy" class=" w-full object-cover" src="./images/${image_path}" alt="${title}">
-                  <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
-                      <h1 class="text-gray-200 font-bold text-xl">$${price}</h1>
-                      <a class="px-3 py-1 text-sm bg-blue-600 font-semibold rounded text-white" target="_blank" 
-                      href="https://api.whatsapp.com/send?phone=584147027645 &text=*Hola!*%0D%0AEstoy interesado en el Producto%3A%0D%0A*${title}* - ${price}$%0D%0A${id}%0D%0A">Información</a> 
-                  </div>
-              </div>
+      <div class="w-full max-w-sm mx-auto overflow-hidden rounded-md shadow-md">
+        <div class="flex items-end justify-end w-full ${heightImg}  bg-cover" ${style}>
+            ${btnWhatsapp}
+        </div>
+        <div class="px-5 py-3">
+            <h3 class="text-gray-700 uppercase">${title}</h3>
+            <span class="mt-2 text-gray-500">${description}</span>
+        </div>
+    </div>
       `;
-
 
     const store = document.createElement('div')
     store.innerHTML = template
@@ -81,16 +41,13 @@ function buildElement({ title, description, image_path, image, category, id, pri
 }
 
 
-
-
-
-
-function cleanStoreList() {
-    window.container.innerHTML = ''
+function cleanStoreList(element_id) {
+    element_id.innerHTML = ''
 }
 
-export default function renderStoreList(list) {
-    cleanStoreList()
-        // console.table(list, ['title', 'poster_path', 'vote_average', 'id'])
+export default function renderStoreList(list, element_id) {
+    const elementId = document.getElementById(element_id)
+    cleanStoreList(elementId)
+    elementDiv = elementId;
     list.forEach(renderElement)
 }

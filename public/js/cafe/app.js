@@ -7,15 +7,20 @@ document.addEventListener("DOMContentLoaded", () => {
 const fetchData = async() => {
     try {
         const res = await fetch('js/cafe/api.json')
-        const data = await res.json()
-        const cafe = data.filter((dt) => dt.category == "cafe");
-        const cafeEspecial = data.filter((dt) => dt.category == "cafe-especial");
-        const infusion = data.filter((dt) => dt.category == "infusion");
-        const infucionEspecial = data.filter((dt) => dt.category == "infusion-especial");
-        const te = data.filter((dt) => dt.category == "te");
-        const teEspecial = data.filter((dt) => dt.category == "te-especial");
-        render(cafe);
-        console.log(data)
+        const menu = await res.json()
+        const cafe = menu.filter((dt) => dt.category == "cafe");
+        const cafeEspecial = menu.filter((dt) => dt.category == "cafe-especial");
+        const infusion = menu.filter((dt) => dt.category == "infusion");
+        const infusionEspecial = menu.filter((dt) => dt.category == "infusion-especial");
+        const te = menu.filter((dt) => dt.category == "te");
+        const teEspecial = menu.filter((dt) => dt.category == "te-especial");
+        render(cafe, 'cafe');
+        render(cafeEspecial, 'cafe-especial');
+        render(infusion, 'infusion');
+        render(infusionEspecial, 'infusion-especial');
+        render(te, 'te');
+        render(teEspecial, 'te-especial');
+        console.log(menu)
 
     } catch (error) {
         console.log(error)
