@@ -28,7 +28,7 @@ function buildElement({ title, description, image_path, image, category, id, pri
         <div class="flex items-end justify-end w-full ${heightImg}  bg-cover" ${style}>
             ${btnWhatsapp}
         </div>
-        <div class="px-5 py-3">
+        <div class="px-5 py-3 bg-white">
             <h3 class="text-gray-700 uppercase">${title}</h3>
             <span class="mt-2 text-gray-500">${description}</span>
         </div>

@@ -1,5 +1,18 @@
 import render from './render.js';
 
+const valores = window.location.search;
+const urlParams = new URLSearchParams(valores);
+var categoryMenu = urlParams.get('menu');
+
+if (categoryMenu) {
+    const panelTab = document.querySelectorAll(".tab-content");
+    for (let i = 0; i < panelTab.length; i++) {
+        panelTab[i].classList.remove("active");
+    }
+    const menu = document.getElementById(categoryMenu);
+    menu.classList.add('active');
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     fetchData()
 })
@@ -20,13 +33,11 @@ const fetchData = async() => {
         render(infusionEspecial, 'infusion-especial');
         render(te, 'te');
         render(teEspecial, 'te-especial');
-        console.log(menu)
-
     } catch (error) {
         console.log(error)
     }
 }
-console.log('init');
+
 const tabs = document.querySelectorAll(".tabs");
 const tab = document.querySelectorAll(".tab");
 const panel = document.querySelectorAll(".tab-content");
