@@ -16,7 +16,7 @@ function buildElement({ title, description, image_path, image, category, id, pri
     }
 
     let btnWhatsapp = `
-        <a class="p-2 mx-5 -mb-4 text-white bg-blue-600 rounded-full hover:bg-blue-500 focus:outline-none focus:bg-blue-500" target="_blank"
+        <a class="p-2 mx-5 -mb-4 text-white bg-black rounded-full hover:bg-blue-500 focus:outline-none focus:bg-blue-500" target="_blank"
         href="https://api.whatsapp.com/send?phone=34677695267&text=*Hola!*%0D%0AEstoy interesado en el Producto%3A%0D%0A*${title}*%0D%0A">
         <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
         </a>
