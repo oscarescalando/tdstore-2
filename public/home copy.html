@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="justify-center h-screen bg-white flex-center">
+<body class="justify-center h-screen bg-black flex-center">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    <div x-data="{ isOpen: false }" class="bg-white ">
+    <div x-data="{ isOpen: false }" class="bg-black ">
         <header class="w-full bg-white">
             <div class="fixed w-full px-6 py-3 mx-auto bg-black">
                 <div class="flex items-center justify-between">
@@ -47,7 +47,7 @@
             </div>
         </header>
 
-        <main>
+        <main style="background-image: url(./images/la_vieja_cuba/images/back.jpg);" class="bg-cover">
             <div class="h-56 bg-bottom bg-no-repeat bg-cover md:h-100 md:bg-center" style="background-image: url(./images/la_vieja_cuba/images/la_vieja_cuba.jpg);">
                 <div class="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50 ">
                     <div class="w-1/2 text-center">
@@ -59,17 +59,6 @@
 
             <div class="container px-6 mx-auto mt-10" id="panels">
                 <div class="tab-content active">
-
-                    <div class="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
-                        <div class="w-full max-w-sm mx-auto overflow-hidden rounded-md ">
-                            <div class="flex items-end justify-end bg-cover rounded-md h-80" style="background-image: url('./images/la_vieja_cuba/images/barroco.jpg'); background-repeat: no-repeat;
-                            background-size: contain; ">
-
-                            </div>
-
-                        </div>
-                    </div>
-
                     <div class="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
                         <a href="menu.html?menu=cafe-id" data-target="cafe">
                             <div class="w-full max-w-sm mx-auto overflow-hidden rounded-md shadow-md">

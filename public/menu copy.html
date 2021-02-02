@@ -12,7 +12,7 @@
 <body class="justify-center h-screen bg-black flex-center">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
-    <div x-data="{ isOpen: false }" class="bg-white ">
+    <div x-data="{ isOpen: false }" class="bg-black ">
         <header class="w-full bg-white">
             <div class="fixed w-full px-6 py-3 mx-auto bg-black">
                 <div class="flex items-center justify-between">
@@ -67,7 +67,7 @@
             <div class="container px-6 mx-auto mt-10" id="panels">
 
                 <div class="text-white cafe tab-content active" id="cafe-id">
-                    <h3 class="text-2xl font-medium text-gray-700">Cafés</h3>
+                    <h3 class="text-2xl font-medium ">Cafés</h3>
                     <span class="mt-3 text-sm text-gray-500"></span>
 
                     <div class="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" id="cafe">
@@ -75,14 +75,14 @@
                 </div>
 
                 <div class="cafe-especial tab-content" id="cafe-especial-id">
-                    <h3 class="text-2xl font-medium text-gray-700">Cafés Especiales</h3>
+                    <h3 class="text-2xl font-medium text-white">Cafés Especiales</h3>
                     <span class="mt-3 text-sm text-gray-500"></span>
                     <div class="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" id="cafe-especial">
                     </div>
                 </div>
 
                 <div class="infusion tab-content" id="infusion-id">
-                    <h3 class="text-2xl font-medium text-gray-700"> Infusiones</h3>
+                    <h3 class="text-2xl font-medium text-white">Infusiones</h3>
                     <span class="mt-3 text-sm text-gray-500"></span>
                     <div class="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" id="infusion">
 
@@ -90,19 +90,19 @@
                 </div>
 
                 <div class="infusion-especial tab-content" id="infusion-especial-id">
-                    <h3 class="text-2xl font-medium text-gray-700">Infusiones Especiales</h3>
+                    <h3 class="text-2xl font-medium text-white">Infusiones Especiales</h3>
                     <span class="mt-3 text-sm text-gray-500"></span>
                     <div class="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" id="infusion-especial"></div>
                 </div>
 
                 <div class="te tab-content" id="te-id">
-                    <h3 class="text-2xl font-medium text-gray-700">Té Normal</h3>
+                    <h3 class="text-2xl font-medium text-white">Té Normal</h3>
                     <span class="mt-3 text-sm text-gray-500"></span>
                     <div class="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" id="te"></div>
                 </div>
 
                 <div class="te-especial tab-content" id="te-especial-id">
-                    <h3 class="text-2xl font-medium text-gray-700">Tés Especiales</h3>
+                    <h3 class="text-2xl font-medium text-white">Tés Especiales</h3>
                     <span class="mt-3 text-sm text-gray-500"></span>
                     <div class="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" id="te-especial"></div>
                 </div>
@@ -112,12 +112,12 @@
                     </div>
 
                     <div class="flex flex-col sm:flex-row tabs">
-                        <a class="mt-3 text-gray-700 hover:underline sm:mx-3 sm:mt-0 tab" href="#" data-target="cafe">Cafés</a>
-                        <a class="mt-3 text-gray-700 hover:underline sm:mx-3 sm:mt-0 tab" href="#" data-target="cafe-especial">Cafés Especiales</a>
-                        <a class="mt-3 text-gray-700 hover:underline sm:mx-3 sm:mt-0 tab" href="#" data-target="infusion">Infusión</a>
-                        <a class="mt-3 text-gray-700 hover:underline sm:mx-3 sm:mt-0 tab" href="#" data-target="infusion-especial">Infusiones Especiales</a>
-                        <a class="mt-3 text-gray-700 hover:underline sm:mx-3 sm:mt-0 tab" href="#" data-target="te">Té Normal</a>
-                        <a class="mt-3 text-gray-700 hover:underline sm:mx-3 sm:mt-0 tab" href="#" data-target="te-especial">Tés Especiales</a>
+                        <a class="mt-3 text-white hover:underline sm:mx-3 sm:mt-0 tab" href="#" data-target="cafe">Cafés</a>
+                        <a class="mt-3 text-white hover:underline sm:mx-3 sm:mt-0 tab" href="#" data-target="cafe-especial">Cafés Especiales</a>
+                        <a class="mt-3 text-white hover:underline sm:mx-3 sm:mt-0 tab" href="#" data-target="infusion">Infusión</a>
+                        <a class="mt-3 text-white hover:underline sm:mx-3 sm:mt-0 tab" href="#" data-target="infusion-especial">Infusiones Especiales</a>
+                        <a class="mt-3 text-white hover:underline sm:mx-3 sm:mt-0 tab" href="#" data-target="te">Té Normal</a>
+                        <a class="mt-3 text-white hover:underline sm:mx-3 sm:mt-0 tab" href="#" data-target="te-especial">Tés Especiales</a>
                     </div>
 
                 </div>
@@ -127,7 +127,7 @@
 
         <footer class="bg-black">
             <div class="container flex items-center justify-between px-6 py-3 mx-auto">
-                <a href="#" class="my-auto text-xl font-bold text-white hover:text-gray-400">La Vieja Cuba</a>
+                <a href="#" class="text-xl font-bold text-white hover:text-gray-400">La Vieja Cuba</a>
 
                 <p class="py-2 text-white sm:py-0">© 2021 PetiClick</p>
             </div>

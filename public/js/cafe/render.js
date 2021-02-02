@@ -9,6 +9,7 @@ function buildElement({ title, description, image_path, image, category, id, pri
 
     let style = '';
     let heightImg = '';
+    let tabInfo = '';
 
     if (image) {
         style = `style="background-image: url('images/la_vieja_cuba/catalogo/${image_path}')"`
@@ -23,15 +24,39 @@ function buildElement({ title, description, image_path, image, category, id, pri
     `;
 
 
+    if (info) {
+        tabInfo = `
+        <button type="button" 
+            x-on:click.prevent="active = '${id}' " 
+            x-bind:class="{'bg-opacity-50': active === '${id}' }">
+            <div class="flex">
+                <img src="./images/la_vieja_cuba/images/cafe.png" class="h-5"/> 
+                <div > Ver información ..</div>
+            </div>
+        </button>
+
+        <div class="p-4"  x-show="active === '${id}'" x-transition:enter="transition ease-out duration-300 origin-top"
+        x-transition:enter-start="opacity-0 transform scale-y-0"
+        x-transition:enter-end="opacity-100 transform scale-y-100">
+            <div class="p-6">
+            ${info}
+            </div>
+        </div>
+        `
+    }
+
+
     const template = `
-      <div class="w-full max-w-sm mx-auto overflow-hidden rounded-md shadow-md">
+      <div class="w-full max-w-sm mx-auto overflow-hidden rounded-md shadow-md"  x-data="{ open: false }">
         <div class="flex items-end justify-end w-full ${heightImg}  bg-cover" ${style}>
             ${btnWhatsapp}
         </div>
-        <div class="px-5 py-3 bg-white">
+        <div class="px-5 py-3 bg-white" x-data="{active: null}">
             <h3 class="text-gray-700 uppercase">${title}</h3>
             <span class="mt-2 text-gray-500">${description}</span>
-        </div>
+             
+            ${tabInfo}
+        </div>     
     </div>
       `;
 

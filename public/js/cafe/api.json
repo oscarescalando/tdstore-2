@@ -2,9 +2,7 @@
         "id": "C0001",
         "title": "Solo",
         "description": "",
-        "info": [
-            ""
-        ],
+        "info": false,
         "image": true,
         "image_path": "solo.jpg",
         "category": "cafe",
@@ -22,9 +20,7 @@
         "id": "C0002",
         "title": "Cortado",
         "description": "",
-        "info": [
-            ""
-        ],
+        "info": false,
         "image": true,
         "image_path": "cortado.jpg",
         "category": "cafe",
@@ -42,9 +38,7 @@
         "id": "C0003",
         "title": "Café con leche",
         "description": "",
-        "info": [
-            ""
-        ],
+        "info": false,
         "image": true,
         "image_path": "manchado.jpg",
         "category": "cafe",
@@ -62,9 +56,7 @@
         "id": "C0004",
         "title": "Manchado",
         "description": "",
-        "info": [
-            ""
-        ],
+        "info": false,
         "image": true,
         "image_path": "belmonte-manchado.jpg",
         "category": "cafe",
@@ -82,9 +74,7 @@
         "id": "C0005",
         "title": "Carajillo",
         "description": "",
-        "info": [
-            ""
-        ],
+        "info": false,
         "image": true,
         "image_path": "carajillo.jpg",
         "category": "cafe",
@@ -102,9 +92,7 @@
         "id": "C0006",
         "title": "Belmonte",
         "description": "",
-        "info": [
-            ""
-        ],
+        "info": false,
         "image": true,
         "image_path": "belmonte-manchado.jpg",
         "category": "cafe",
@@ -122,9 +110,7 @@
         "id": "C0007",
         "title": "Americano",
         "description": "",
-        "info": [
-            ""
-        ],
+        "info": false,
         "image": true,
         "image_path": "americano.jpg",
         "category": "cafe",
@@ -142,9 +128,7 @@
         "id": "C0008",
         "title": "Bombón",
         "description": "",
-        "info": [
-            ""
-        ],
+        "info": false,
         "image": true,
         "image_path": "bombon.jpg",
         "category": "cafe",
@@ -160,13 +144,11 @@
 
     {
         "id": "CE001",
-        "title": "Latte machiato Tiramisu avellana chocolate",
+        "title": "Latte macchiato Tiramisú avellana chocolate",
         "description": "",
-        "info": [
-            ""
-        ],
+        "info": false,
         "image": true,
-        "image_path": "LatteMacchiatto.jpg",
+        "image_path": "latte.jpg",
         "category": "cafe-especial",
         "price": 1500,
         "variable cost": false,
@@ -180,11 +162,9 @@
 
     {
         "id": "CE002",
-        "title": "Cappuchino con cacao",
+        "title": "Cappucino con cacao",
         "description": "(elegir entre sabores: Avellana, tiramisú o chocolate)",
-        "info": [
-            ""
-        ],
+        "info": false,
         "image": true,
         "image_path": "Cappuccino1.jpg",
         "category": "cafe-especial",
@@ -202,9 +182,7 @@
         "id": "CE003",
         "title": "Asiático del rincón de La Vieja Cuba",
         "description": "(elegir entre sabores: chocolate o caramelo)",
-        "info": [
-            ""
-        ],
+        "info": false,
         "image": true,
         "image_path": "asiatico.jpg",
         "category": "cafe-especial",
@@ -220,13 +198,29 @@
 
     {
         "id": "CE004",
-        "title": "Mocachino con sabor a salsa chocolate y carameloa",
+        "title": "Mocachino con sabor a salsa chocolate",
         "description": "",
-        "info": [
-            ""
-        ],
+        "info": false,
         "image": true,
-        "image_path": "moccahino.jpg",
+        "image_path": "mocacino-chocolate.jpg",
+        "category": "cafe-especial",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "CE004",
+        "title": "Mocachino con caramelo",
+        "description": "",
+        "info": false,
+        "image": true,
+        "image_path": "mocacino-caramelo.jpg",
         "category": "cafe-especial",
         "price": 1500,
         "variable cost": false,
@@ -242,9 +236,7 @@
         "id": "I0001",
         "title": "Manzanilla",
         "description": "",
-        "info": [
-            ""
-        ],
+        "info": "<strong>FLOR DE MANZANILLA - MANZANILLA</strong><br>La manzanilla es una hierba aromática que ha sido utilizada <br>desde hace siglos con fines medicinales. <br>Es originaria de Europa y de allí fue introducida <br>en América, donde es muy comercializada y cultivada.<br>La parte medicinal que se utiliza son las flores.",
         "image": true,
         "image_path": "manzanilla.jpg",
         "category": "infusion",
@@ -262,9 +254,7 @@
         "id": "I0002",
         "title": "Poleo",
         "description": "",
-        "info": [
-            ""
-        ],
+        "info": "Hojas de menta piperina.",
         "image": true,
         "image_path": "poleo.jpg",
         "category": "infusion",
@@ -282,9 +272,7 @@
         "id": "I0003",
         "title": "Tila",
         "description": "",
-        "info": [
-            ""
-        ],
+        "info": "Mezcla de hierbas aromáticas. Relajante, de sabor suave.",
         "image": true,
         "image_path": "tila.jpg",
         "category": "infusion",
@@ -299,15 +287,13 @@
     },
 
     {
-        "id": "IE001",
+        "id": "IE0004",
         "title": "Frutos del Bosque",
         "description": "",
-        "info": [
-            ""
-        ],
+        "info": "Ingredientes: té, bayas de saúco, trocitos de zarzamora, hojas de frambuesa, trocitos de frambuesa. <br>Saúco: arbusto de hojas aserradas, acres y malolientes, con fruto en baya de color negro o rojo, que crece en regiones montañosas de Europa y cuyas flores en inflorescencias se usan en medicina para favorecer la transpiración. <br>Zarzamora: fruto de la zarza, comestible, de forma redondeada, color verde al nacer y morado o negro cuando está maduro y de sabor dulce.",
         "image": true,
         "image_path": "frutos-del-bosque.jpg",
-        "category": "infusion-especial",
+        "category": "infusion",
         "price": 1500,
         "variable cost": false,
         "cost": [{
@@ -319,15 +305,13 @@
     },
 
     {
-        "id": "IE002",
-        "title": "Flor del Desierto",
+        "id": "I0005",
+        "title": "Flor del Desierto Rooibos",
         "description": "",
-        "info": [
-            ""
-        ],
+        "info": "Planta de origen sudafricano que significa arbusto rojo (redbush). Es popular debido al uso que se hace de sus hojas para elaborar infusiones. Se conoce también como té rojo sudafricano pero no debe confundirse con el pu-erh ya que no proviene de la planta del té. Ingredientes: rooibos, trocitos de papaya, escamas de chocolate, corteza de naranja, pétalos de rosa. ",
         "image": true,
         "image_path": "flor.jpg",
-        "category": "infusion-especial",
+        "category": "infusion",
         "price": 1500,
         "variable cost": false,
         "cost": [{
@@ -342,9 +326,7 @@
         "id": "IE003",
         "title": "Jengibre Limón",
         "description": "",
-        "info": [
-            ""
-        ],
+        "info": false,
         "image": true,
         "image_path": "te-jengibre-con-limon.jpg",
         "category": "infusion-especial",
@@ -362,9 +344,7 @@
         "id": "T0001",
         "title": "Té",
         "description": "",
-        "info": [
-            ""
-        ],
+        "info": false,
         "image": true,
         "image_path": "te.jpg",
         "category": "te",
@@ -382,9 +362,7 @@
         "id": "T0002",
         "title": "Té Verde",
         "description": "",
-        "info": [
-            ""
-        ],
+        "info": "Con el nombre de gunpowder se conoce a una variedad de té verde cultivado en la provincia china de Zhejiang y llamado así por su parecido visual a la pólvora (en inglés gunpowder) ya que al recolectarse las hojas, provenientes de la primera cosecha, son enrolladas en forma de bolitas (o perdigones) para mantener mejor sus propiedades. En china se conoce como “té en perla”. Conocido como té moruno en Marruecos, donde se toma con menta y azúcar. Infusión de color verde oliva con sabor muy agradable, dulce y aromático. Bebida muy refrescante.",
         "image": true,
         "image_path": "verde.jpg",
         "category": "te",
@@ -402,9 +380,7 @@
         "id": "T0003",
         "title": "Té Rojo",
         "description": "",
-        "info": [
-            ""
-        ],
+        "info": "Tradicional té rojo chino. Es un tipo de té elaborado a partir de una hoja larga de la planta del té. Este té tiene un sabor barroso, terroso y ácido. Aunque hay muchas falsificaciones en el mercado, y el auténtico es difícil de identificar, es posible encontrarlo con una antigüedad que va de 10 a 50 años, incluso alguno de la última dinastía Qing.",
         "image": true,
         "image_path": "rojo.jpg",
         "category": "te",
@@ -422,9 +398,7 @@
         "id": "TE001",
         "title": "Té Canela",
         "description": "",
-        "info": [
-            ""
-        ],
+        "info": "Ingredientes: té, trocitos de canela en rama.",
         "image": true,
         "image_path": "te-de-canela.jpg",
         "category": "te-especial",
@@ -442,9 +416,7 @@
         "id": "TE002",
         "title": "Té Jardín del Edén",
         "description": "",
-        "info": [
-            ""
-        ],
+        "info": false,
         "image": true,
         "image_path": "especial.jpg",
         "category": "te-especial",
@@ -462,9 +434,7 @@
         "id": "TE003",
         "title": "Té Chai",
         "description": "",
-        "info": [
-            ""
-        ],
+        "info": "Ingredientes: piel de naranja, trocitos de jengibre, trocitos de canela, trocitos de cardamomo, trocitos de vainilla, clavo. <br> Jengibre: planta de origen asiático, con hojas radicales y lanceoladas, flores en espiga, fruto capsular bastante pulposo y rizoma aromático del grueso de un dedo, de sabor acre y picante que se usa en medicina y como especia. <br>Cardamomo: planta de hojas grandes, flores blancas con listas azules y bordes amarillos, fruto en forma de pequeña cápsula y semillas de color castaño oscuro que se usan como especia.",
         "image": true,
         "image_path": "chai.jpg",
         "category": "te-especial",
