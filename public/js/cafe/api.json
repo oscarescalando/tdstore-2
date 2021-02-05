@@ -323,6 +323,27 @@
     },
 
     {
+        "id": "IE0006",
+        "title": "Frutos Rojos",
+        "description": "",
+        "info": false,
+        "image": true,
+        "image_path": "frutos-rojo.jpeg",
+        "category": "infusion",
+        "price": 1500,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+
+
+
+    {
         "id": "IE003",
         "title": "Jengibre Limón",
         "description": "",
