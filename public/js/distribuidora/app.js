@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const fetchData = async() => {
     try {
-        const res = await fetch('js/cafe/api.json')
+        const res = await fetch('js/distribuidora/api.json')
         const menu = await res.json()
         const cafe = menu.filter((dt) => dt.category == "cafe");
         const cafeEspecial = menu.filter((dt) => dt.category == "cafe-especial");

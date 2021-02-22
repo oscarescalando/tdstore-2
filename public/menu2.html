@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="./images/distribuidora/images/cafe.png">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="justify-center h-screen bg-black flex-center">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    <div x-data="{ cartOpen: false , isOpen: false }" class="bg-white ">
+        <header class="w-full bg-white">
+            <div class="fixed w-full px-6 py-3 mx-auto bg-white">
+                <div class="flex items-center justify-between">
+                    <div class="hidden w-full text-black md:flex md:items-center">
+                        <img src="./images/distribuidora/images/phone.svg">
+                        <span class="mx-1 text-sm">609570064</span>
+                    </div>
+                    <div class="w-full text-2xl font-semibold text-black md:text-center">
+                        <a href="" alt="Distribuidora">Distribuidora</a>
+                    </div>
+                    <div class="flex items-center justify-end w-full">
+                        <button @click="cartOpen = !cartOpen" class="mx-4 text-black focus:outline-none sm:mx-0">
+                            <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </button>
+
+                        <div class="flex sm:hidden">
+                            <button @click="isOpen = !isOpen" type="button" class="text-blacke hover:text-gray-500 focus:outline-none focus:text-gray-500" aria-label="toggle menu">
+                            <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                                <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                            </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <nav :class="isOpen ? '' : 'hidden'" class="mt-4 sm:flex sm:justify-center sm:items-center">
+                    <div class="flex flex-col sm:flex-row tabs">
+                        <a class="mt-3 text-black hover:underline sm:mx-3 sm:mt-0 tab" href="#" data-target="cafe">Cafés</a>
+                        <a class="mt-3 text-black hover:underline sm:mx-3 sm:mt-0 tab" href="#" data-target="infusion">Infusiones y Té</a>
+                        <a class="mt-3 text-black hover:underline sm:mx-3 sm:mt-0 tab" href="#" data-target="infusion-especial">Accesorios</a>
+                    </div>
+                </nav>
+
+
+
+            </div>
+        </header>
+
+        <div :class="cartOpen ? 'translate-x-0 ease-out' : 'translate-x-full ease-in'" class="fixed top-0 right-0 w-full h-full max-w-xs px-6 py-4 overflow-y-auto transition duration-300 transform bg-white border-l-2 border-gray-300">
+            <div class="flex items-center justify-between">
+                <h3 class="text-2xl font-medium text-gray-700">Carrito de compras</h3>
+                <button @click="cartOpen = !cartOpen" class="text-gray-600 focus:outline-none">
+                <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <hr class="my-3">
+            <div class="flex justify-between mt-6">
+                <div class="flex">
+                    <img class="object-cover w-20 h-20 rounded" src="./images/distribuidora/catalogo/cafe-barrocco1.jpg" alt="">
+                    <div class="mx-3">
+                        <h3 class="text-sm text-gray-600">CAFÉ BARROCCO 100% ARÁBICA 3KG</h3>
+                        <div class="flex items-center mt-2">
+                            <button class="text-gray-500 focus:outline-none focus:text-gray-600">
+                            <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </button>
+                            <span class="mx-2 text-gray-700">2</span>
+                            <button class="text-gray-500 focus:outline-none focus:text-gray-600">
+                            <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <span class="text-gray-600">14.54€</span>
+            </div>
+            <div class="flex justify-between mt-6">
+                <div class="flex">
+                    <img class="object-cover w-20 h-20 rounded" src="./images/distribuidora/catalogo/nescafe.jpg" alt="">
+                    <div class="mx-3">
+                        <h3 class="text-sm text-gray-600">SOBRES DE NESCAFE</h3>
+                        <div class="flex items-center mt-2">
+                            <button class="text-gray-500 focus:outline-none focus:text-gray-600">
+                            <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </button>
+                            <span class="mx-2 text-gray-700">2</span>
+                            <button class="text-gray-500 focus:outline-none focus:text-gray-600">
+                            <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <span class="text-gray-600">30€</span>
+            </div>
+            <div class="flex justify-between mt-6">
+                <div class="flex">
+                    <img class="object-cover w-20 h-20 rounded" src="./images/distribuidora/catalogo/colacao-cacao.jpg" alt="">
+                    <div class="mx-3">
+                        <h3 class="text-sm text-gray-600">COLACAO SOBRES 50 UNDS</h3>
+                        <div class="flex items-center mt-2">
+                            <button class="text-gray-500 focus:outline-none focus:text-gray-600">
+                            <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </button>
+                            <span class="mx-2 text-gray-700">2</span>
+                            <button class="text-gray-500 focus:outline-none focus:text-gray-600">
+                            <svg class="w-5 h-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <span class="text-gray-600">30€</span>
+            </div>
+            <div class="mt-8">
+                <form class="flex items-center justify-center">
+                    <input class="w-48 form-input" type="text" placeholder="Add promocode">
+                    <button class="flex items-center px-3 py-2 ml-3 text-sm font-medium text-white uppercase bg-blue-600 rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+                    <span>Apply</span>
+                    </button>
+                </form>
+            </div>
+            <a class="flex items-center justify-center px-3 py-2 mt-4 text-sm font-medium text-white uppercase bg-blue-600 rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+                <span>Chechout</span>
+                <svg class="w-5 h-5 mx-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            </a>
+        </div>
+
+        <main>
+
+            <div class="h-56 bg-bottom bg-no-repeat bg-cover md:h-100 md:bg-center" style="background-image: url(./images/distribuidora/images/backdistribuidora.jpg);">
+
+                <div class="flex items-center justify-center w-full h-full bg-gray-900 bg-opacity-50 ">
+
+                    <div class="w-1/2 text-center">
+                        <div class="h-10">&nbsp;</div>
+                        <div class="flex ">
+                            <img src="./images/distribuidora/images/cafes-salzillo-logo.png" loading="lazy" alt="distribuidora" class="items-center md:h-40 sm:h-32">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container px-6 mx-auto mt-10" id="panels">
+
+                <div class="text-gray-700 cafe tab-content active" id="cafe-id">
+                    <h3 class="text-2xl font-medium text-gray-700">Cafés</h3>
+                    <br/>
+                    <p></p>
+
+                    <span class="mt-3 text-sm text-gray-500"></span>
+
+                    <div class="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" id="cafe">
+                    </div>
+                </div>
+
+                <div class="cafe-especial tab-content" id="cafe-especial-id">
+                    <h3 class="text-2xl font-medium text-gray-700">Cafés Especiales</h3>
+                    <br/>
+                    <p>
+                        En La Vieja Cuba hemos seleccionado café Barrocco. Este café está configurado a partir de la original mezcla del mejor grano de cuatro variedades fantásticas. Etiopía, Colombia, Guatemala y Papúa Nueva Guinea.</p>
+                    <br/>
+                    <p>Barrocco es un café suave, aromático, cremoso y con mucho cuerpo. Este café ha sido sabiamente combinado, tostado a fuego lento y consiguiendo un contenido en cafeína muy equilibrado. Es por ello que adquiere un sabor silvestre que
+                        deja notas amargas y dulces al mismo tiempo.
+                    </p>
+
+                    <span class="mt-3 text-sm text-gray-500"></span>
+                    <div class="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" id="cafe-especial">
+                    </div>
+                </div>
+
+                <div class="infusion tab-content" id="infusion-id">
+                    <h3 class="text-2xl font-medium text-gray-700"> Infusiones y Té </h3>
+                    <span class="mt-3 text-sm text-gray-500"></span>
+                    <div class="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" id="infusion">
+
+                    </div>
+                </div>
+
+                <div class="infusion-especial tab-content" id="infusion-especial-id">
+                    <h3 class="text-2xl font-medium text-gray-700">Accesorios</h3>
+                    <span class="mt-3 text-sm text-gray-500"></span>
+                    <div class="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" id="infusion-especial"></div>
+                </div>
+
+                <div class="te tab-content" id="te-id">
+                    <h3 class="text-2xl font-medium text-gray-700">Té Normal</h3>
+                    <span class="mt-3 text-sm text-gray-500"></span>
+                    <div class="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" id="te"></div>
+                </div>
+
+                <div class="te-especial tab-content" id="te-especial-id">
+                    <h3 class="text-2xl font-medium text-gray-700">Tés Especiales</h3>
+                    <span class="mt-3 text-sm text-gray-500"></span>
+                    <div class="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" id="te-especial"></div>
+                </div>
+
+                <div class="flex justify-center my-8">
+                    <div class="flex mt-8 rounded-md">
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row tabs">
+                        <a class="mt-3 text-gray-700 hover:underline sm:mx-3 sm:mt-0 tab" href="#" data-target="cafe">Cafés</a>
+
+                        <a class="mt-3 text-gray-700 hover:underline sm:mx-3 sm:mt-0 tab" href="#" data-target="infusion">Infusiones y Té</a>
+                        <a class="mt-3 text-gray-700 hover:underline sm:mx-3 sm:mt-0 tab" href="#" data-target="infusion-especial">Accesorios</a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="h-10">&nbsp;</div>
+        </main>
+
+        <footer class="bg-gray-200">
+            <div class="container flex items-center justify-between px-6 py-3 mx-auto">
+                <a href="#" target="_black" class="text-xl font-bold text-gray-700 hover:text-gray-400">
+                    <img src="./images/distribuidora/images/facebook.svg" class="h-10">
+                </a>
+
+                <a href="#" class="text-xl font-bold text-gray-700 hover:text-gray-400">Distribuidora</a>
+
+
+                <p class="py-2 text-gray-700 sm:py-0">
+                    <img src="./images/distribuidora/images/cafes-salzillo-logo.png" alt="Cafe Salzillo" class="h-16">
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="./js/distribuidora/app.js"></script>
+
+</body>
+
+</html>

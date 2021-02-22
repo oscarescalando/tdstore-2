@@ -1,12 +1,12 @@
 [{
         "id": "C0001",
-        "title": "Solo",
-        "description": "",
+        "title": "Lata de Salzillo café Barrocco 100% Arábica 3KG",
+        "description": "1 unds. Tamaño: Bote de 3kg",
         "info": false,
         "image": true,
-        "image_path": "solo.jpg",
+        "image_path": "cafe-barrocco1.jpg",
         "category": "cafe",
-        "price": 1500,
+        "price": 7.27,
         "variable cost": false,
         "cost": [{
             "value": 0,
@@ -18,13 +18,13 @@
 
     {
         "id": "C0002",
-        "title": "Cortado",
-        "description": "",
+        "title": "Lata de Salzillo café Barrocco descafeinado 100% Arábica 2KG",
+        "description": "1 unds. Tamaño: Bote de 2kg",
         "info": false,
         "image": true,
-        "image_path": "cortado.jpg",
+        "image_path": "cafe-barrocco-descafeinado.jpg",
         "category": "cafe",
-        "price": 1500,
+        "price": 6.61,
         "variable cost": false,
         "cost": [{
             "value": 0,
@@ -36,13 +36,13 @@
 
     {
         "id": "C0003",
-        "title": "Café con leche",
-        "description": "",
+        "title": "Azúcar Salzillo sobre de 6gr",
+        "description": "1 unds. Equivale a 1000 unds de sobres de azúcar(caja)",
         "info": false,
         "image": true,
-        "image_path": "manchado.jpg",
+        "image_path": "azucar-salzillo.jpg",
         "category": "cafe",
-        "price": 1500,
+        "price": 15,
         "variable cost": false,
         "cost": [{
             "value": 0,
@@ -54,13 +54,13 @@
 
     {
         "id": "C0004",
-        "title": "Manchado",
-        "description": "",
+        "title": "Leche condensada Salzillo 840gr.",
+        "description": "1 unds equivale a 6 botes de leche condensada de 840gr",
         "info": false,
         "image": true,
-        "image_path": "belmonte-manchado.jpg",
+        "image_path": "leche-condensada.jpg",
         "category": "cafe",
-        "price": 1500,
+        "price": 12,
         "variable cost": false,
         "cost": [{
             "value": 0,
@@ -72,13 +72,13 @@
 
     {
         "id": "C0005",
-        "title": "Carajillo",
-        "description": "",
+        "title": "Azucar moreno Salzillo transparente 1200 unds",
+        "description": "1 unds. Equivale a 1200 unds de sobres de azúcar moreno (caja)",
         "info": false,
         "image": true,
-        "image_path": "carajillo.jpg",
+        "image_path": "azucar-moreno.jpg",
         "category": "cafe",
-        "price": 1500,
+        "price": 15,
         "variable cost": false,
         "cost": [{
             "value": 0,
@@ -90,11 +90,11 @@
 
     {
         "id": "C0006",
-        "title": "Belmonte",
+        "title": "Sacarina Salzillo 500 sobre (formato pastilla)",
         "description": "",
         "info": false,
         "image": true,
-        "image_path": "belmonte-manchado.jpg",
+        "image_path": "sacarina-salzillo.jpg",
         "category": "cafe",
         "price": 1500,
         "variable cost": false,
@@ -108,13 +108,13 @@
 
     {
         "id": "C0007",
-        "title": "Americano",
-        "description": "",
+        "title": "Sobres de Nescafe",
+        "description": "1 unds. Equivale a 100 unds de sobres de nescafe",
         "info": false,
         "image": true,
-        "image_path": "americano.jpg",
+        "image_path": "nescafe.jpg",
         "category": "cafe",
-        "price": 1500,
+        "price": 15,
         "variable cost": false,
         "cost": [{
             "value": 0,
@@ -126,13 +126,13 @@
 
     {
         "id": "C0008",
-        "title": "Bombón",
-        "description": "",
+        "title": "Colacao sobres 50 unds",
+        "description": "1 unds. Equivale 50 unds sobres Colacao",
         "info": false,
         "image": true,
-        "image_path": "bombon.jpg",
+        "image_path": "colacao-cacao.jpg",
         "category": "cafe",
-        "price": 1500,
+        "price": 15,
         "variable cost": false,
         "cost": [{
             "value": 0,
@@ -142,105 +142,16 @@
         "extra": "url"
     },
 
-    {
-        "id": "CE001",
-        "title": "Latte macchiato Tiramisú avellana chocolate",
-        "description": "",
-        "info": false,
-        "image": true,
-        "image_path": "latte.jpg",
-        "category": "cafe-especial",
-        "price": 1500,
-        "variable cost": false,
-        "cost": [{
-            "value": 0,
-            "info": ""
-        }],
-        "order": 1,
-        "extra": "url"
-    },
-
-    {
-        "id": "CE002",
-        "title": "Cappucino con cacao",
-        "description": "(elegir entre sabores: Avellana, tiramisú o chocolate)",
-        "info": false,
-        "image": true,
-        "image_path": "Cappuccino1.jpg",
-        "category": "cafe-especial",
-        "price": 1500,
-        "variable cost": false,
-        "cost": [{
-            "value": 0,
-            "info": ""
-        }],
-        "order": 1,
-        "extra": "url"
-    },
-
-    {
-        "id": "CE003",
-        "title": "Asiático del rincón de La Vieja Cuba",
-        "description": "(elegir entre sabores: chocolate o caramelo)",
-        "info": false,
-        "image": true,
-        "image_path": "asiatico.jpg",
-        "category": "cafe-especial",
-        "price": 1500,
-        "variable cost": false,
-        "cost": [{
-            "value": 0,
-            "info": ""
-        }],
-        "order": 1,
-        "extra": "url"
-    },
-
-    {
-        "id": "CE004",
-        "title": "Mocachino con sabor a salsa chocolate",
-        "description": "",
-        "info": false,
-        "image": true,
-        "image_path": "mocacino-chocolate.jpg",
-        "category": "cafe-especial",
-        "price": 1500,
-        "variable cost": false,
-        "cost": [{
-            "value": 0,
-            "info": ""
-        }],
-        "order": 1,
-        "extra": "url"
-    },
-
-    {
-        "id": "CE004",
-        "title": "Mocachino con caramelo",
-        "description": "",
-        "info": false,
-        "image": true,
-        "image_path": "mocacino-caramelo.jpg",
-        "category": "cafe-especial",
-        "price": 1500,
-        "variable cost": false,
-        "cost": [{
-            "value": 0,
-            "info": ""
-        }],
-        "order": 1,
-        "extra": "url"
-    },
 
     {
         "id": "I0001",
-        "title": "Manzanilla",
-        "description": "",
-        "info": "<strong>FLOR DE MANZANILLA - MANZANILLA</strong><br>La manzanilla es una hierba aromática que ha sido utilizada <br>desde hace siglos con fines medicinales. <br>Es originaria de Europa y de allí fue introducida <br>en América, donde es muy comercializada y cultivada.<br>La parte medicinal que se utiliza son las flores.",
+        "title": "Bote de 75 pirámides de Flor de Manzanilla",
+        "description": "1 und. Equivale un bote de 75 pirámides",
+        "info": "",
         "image": true,
-        "image_path": "manzanilla.jpg",
+        "image_path": "infusion-flor-de-manzanilla.jpg",
         "category": "infusion",
-        "price": 1500,
+        "price": 4.30,
         "variable cost": false,
         "cost": [{
             "value": 0,
@@ -252,13 +163,13 @@
 
     {
         "id": "I0002",
-        "title": "Poleo",
-        "description": "",
-        "info": "Hojas de menta piperina.",
+        "title": "Bote de 75 pirámides de infusión Poleo",
+        "description": "1 und. Equivale un bote de 75 pirámides",
+        "info": "",
         "image": true,
-        "image_path": "poleo.jpg",
+        "image_path": "infusion-poleo.jpg",
         "category": "infusion",
-        "price": 1500,
+        "price": 4.30,
         "variable cost": false,
         "cost": [{
             "value": 0,
@@ -270,13 +181,13 @@
 
     {
         "id": "I0003",
-        "title": "Tila",
-        "description": "",
-        "info": "Mezcla de hierbas aromáticas. Relajante, de sabor suave.",
+        "title": "Bote de 75 pirámides de Té Tisana",
+        "description": "1 und. Equivale un bote de 75 pirámides",
+        "info": "",
         "image": true,
-        "image_path": "tila.jpg",
+        "image_path": "infusion-tisana-natural.jpg",
         "category": "infusion",
-        "price": 1500,
+        "price": 4.95,
         "variable cost": false,
         "cost": [{
             "value": 0,
@@ -288,13 +199,13 @@
 
     {
         "id": "IE0004",
-        "title": "Infusión Frutos del Bosque",
-        "description": "",
-        "info": "Ingredientes: té, bayas de saúco, trocitos de zarzamora, hojas de frambuesa, trocitos de frambuesa. <br>Saúco: arbusto de hojas aserradas, acres y malolientes, con fruto en baya de color negro o rojo, que crece en regiones montañosas de Europa y cuyas flores en inflorescencias se usan en medicina para favorecer la transpiración. <br>Zarzamora: fruto de la zarza, comestible, de forma redondeada, color verde al nacer y morado o negro cuando está maduro y de sabor dulce.",
+        "title": "Bote de 75 pirámides de  Frutos del Bosque",
+        "description": "1 und. Equivale un bote de 75 pirámides",
+        "info": "",
         "image": true,
-        "image_path": "frutos-del-bosque.jpg",
+        "image_path": "infusion-frutos-del-bosque.jpg",
         "category": "infusion",
-        "price": 1500,
+        "price": 6.66,
         "variable cost": false,
         "cost": [{
             "value": 0,
@@ -306,13 +217,13 @@
 
     {
         "id": "I0005",
-        "title": "Infusión Flor del Desierto Rooibos",
-        "description": "",
-        "info": "Planta de origen sudafricano que significa arbusto rojo (redbush). Es popular debido al uso que se hace de sus hojas para elaborar infusiones. Se conoce también como té rojo sudafricano pero no debe confundirse con el pu-erh ya que no proviene de la planta del té. Ingredientes: rooibos, trocitos de papaya, escamas de chocolate, corteza de naranja, pétalos de rosa. ",
+        "title": "Bote de 75 pirámides de Rooibos Estrella Blanca",
+        "description": "1 und. Equivale un bote de 75 pirámides",
+        "info": "",
         "image": true,
-        "image_path": "flor.jpg",
+        "image_path": "rooibos-estrella-blanca.jpg",
         "category": "infusion",
-        "price": 1500,
+        "price": 6.66,
         "variable cost": false,
         "cost": [{
             "value": 0,
@@ -324,13 +235,13 @@
 
     {
         "id": "IE0006",
-        "title": "Infusión Frutos Rojos",
-        "description": "",
+        "title": "Bote de 75 pirámides de Té Earl Grey",
+        "description": "1 und. Equivale un bote de 75 pirámides",
         "info": false,
         "image": true,
-        "image_path": "frutos-rojo.jpeg",
+        "image_path": "te-earl-grey.jpg",
         "category": "infusion",
-        "price": 1500,
+        "price": 4.47,
         "variable cost": false,
         "cost": [{
             "value": 0,
@@ -345,13 +256,13 @@
 
     {
         "id": "IE003",
-        "title": "Jengibre Limón",
-        "description": "",
+        "title": "Bote de 75 pirámides de Té Rojo PU ERH",
+        "description": "1 und. Equivale un bote de 75 pirámides",
         "info": false,
         "image": true,
-        "image_path": "te-jengibre-con-limon.jpg",
-        "category": "infusion-especial",
-        "price": 1500,
+        "image_path": "te-pu-erh-te-rojo.jpg",
+        "category": "infusion",
+        "price": 5.96,
         "variable cost": false,
         "cost": [{
             "value": 0,
@@ -363,13 +274,13 @@
 
     {
         "id": "T0001",
-        "title": "Té",
-        "description": "",
+        "title": "Bote de 75 pirámides de Té GUNPOWDER",
+        "description": "1 und. Equivale un bote de 75 pirámides",
         "info": false,
         "image": true,
-        "image_path": "te.jpg",
-        "category": "te",
-        "price": 1500,
+        "image_path": "te-gunpowder.jpg",
+        "category": "infusion",
+        "price": 4.80,
         "variable cost": false,
         "cost": [{
             "value": 0,
@@ -381,13 +292,103 @@
 
     {
         "id": "T0002",
-        "title": "Té Verde",
-        "description": "",
-        "info": "Con el nombre de gunpowder se conoce a una variedad de té verde cultivado en la provincia china de Zhejiang y llamado así por su parecido visual a la pólvora (en inglés gunpowder) ya que al recolectarse las hojas, provenientes de la primera cosecha, son enrolladas en forma de bolitas (o perdigones) para mantener mejor sus propiedades. En china se conoce como “té en perla”. Conocido como té moruno en Marruecos, donde se toma con menta y azúcar. Infusión de color verde oliva con sabor muy agradable, dulce y aromático. Bebida muy refrescante.",
+        "title": "Vaso acolchado solo 40oz 100unds",
+        "description": "1 und. Equivale a 100 unds",
+        "info": false,
         "image": true,
-        "image_path": "verde.jpg",
-        "category": "te",
-        "price": 1500,
+        "image_path": "vaso.jpg",
+        "category": "infusion-especial",
+        "price": 25,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "T0003",
+        "title": "Vaso acolchado solo 80oz 100unds",
+        "description": "1 und. Equivale a 100 unds",
+        "info": false,
+        "image": true,
+        "image_path": "vaso.jpg",
+        "category": "infusion-especial",
+        "price": 30,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "T0004",
+        "title": "Tapas 40oz 100unds",
+        "description": "1 und. Equivale a 100 unds",
+        "info": false,
+        "image": true,
+        "image_path": "tapa.jpg",
+        "category": "infusion-especial",
+        "price": 10,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "T0005",
+        "title": "Tapas 80oz 100unds",
+        "description": "1 und. Equivale a 100 unds",
+        "info": false,
+        "image": true,
+        "image_path": "tapa.jpg",
+        "category": "infusion-especial",
+        "price": 10,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "T0006",
+        "title": "Paletinas/Agitador 100unds",
+        "description": "1 und. Equivale a 100 unds",
+        "info": false,
+        "image": true,
+        "image_path": "agitador-cafe.jpg",
+        "category": "infusion-especial",
+        "price": 10,
+        "variable cost": false,
+        "cost": [{
+            "value": 0,
+            "info": ""
+        }],
+        "order": 1,
+        "extra": "url"
+    },
+
+    {
+        "id": "T0006",
+        "title": "Porta vasos de café  con leche 30unds",
+        "description": "1 und. Equivale a 30 unds",
+        "info": false,
+        "image": true,
+        "image_path": "portavasos.jpg",
+        "category": "infusion-especial",
+        "price": 10,
         "variable cost": false,
         "cost": [{
             "value": 0,
