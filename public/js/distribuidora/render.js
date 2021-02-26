@@ -55,10 +55,6 @@ function buildElement({ title, description, image_path, image, category, id, pri
         <div class="px-5 py-3 bg-white" x-data="{active: null}">
             <h3 class="text-gray-700 uppercase">${title}</h3>
             <span class="mt-2 text-gray-500">${description}</span>
-            <div class="current-price justify-end">
-                <span class="price text-gray-700 text-right" itemprop="price" content="${price}">${price} €</span>
-            </div>
-             
             ${tabInfo}
         </div>     
     </div>
