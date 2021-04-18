@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Domicilios - Sibarita</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.7/dist/alpine.js" defer></script>
+    <link rel="icon"  href="images/sibarita-300x300.png" type="image/png" />
+
+</head>
+
+<body class="bg-gray-400">
+    <nav x-data="{ open: false }" class="fixed z-10 w-full text-gray-100 bg-secondary">
+        <div class="flex items-center justify-between px-2 text-white bg-secondary">
+            <div class="text-xl font-semibold">
+               Sibarita - <a href="tel:+34868105453" class="ml-2">
+                    <i class="fa fa-phone" aria-hidden="true"></i> 868 10 54 53
+                    </a>
+            </div>
+            <div class="text-2xl" @click="open = true">&equiv;</div>
+        </div>
+
+        <div x-show="open" @click.away="open = false">
+            <div class="mx-2 mt-1">
+               
+            </div>
+            <div class="justify-around py-1 mx-2 md:flex">
+                <div class="flex">
+                    Carta
+                </div>
+               
+                <div class="flex">
+                    <div class="ml-2"><a href="#sibarita">El Sibarita</a></div>
+                </div> 
+                 <div class="flex">  
+                   
+                    <div class="ml-2"><a href="#flashburguer">Flash Burguer</a></div>
+                    
+                </div>
+                <div class="flex">
+                    <div class="ml-2"><a href="#achotaco">Acho Taco</a></div>
+                </div>
+                <div class="flex">
+                    <div class="ml-2"><a href="#postres">Postres</a></div>
+                </div>
+                <div>
+                   <a href="tel:+34868105453" class="ml-2">
+                    <i class="fa fa-phone" aria-hidden="true"></i> 868 10 54 53
+                    </a> /
+                    <a href="tel:+34672109475" class="ml-2">
+                    <i class="fa fa-phone" aria-hidden="true"></i> 670 10 94 72
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="mb-8 bg-gray-400">
+          <!--
+        <div class="h-56 bg-bottom bg-no-repeat bg-cover md:h-100 md:bg-center" style="background-image: url('images/sibarita-restaurant.jpg')">
+        </div>
+        -->
+       
+        <div clas="mt-10"><br></div>
+        <div class="container mx-auto mt-10 text-2xl text-right text-blue-600">
+            <div class="mr-2">
+            <a href="tel:+34868105453" class="text-blue-600">
+            <i class="text-blue-600 fa fa-phone" aria-hidden="true"></i> 868 10 54 53
+            </a>
+            </div>
+        </div>
+        <div class="container mx-auto text-2xl bold">
+            <div class="ml-2">
+               Servicio a Domicilio
+            </div>
+        </div>
+        <div class="container mx-auto text-xl bold">
+            <div class="ml-2">
+                Pedido mínimo es de 12€
+            </div>
+        </div>
+        
+        <!-- El SIBARTAS -->
+        <div class="container mx-auto mt-2 bg-gray-400 md:flex" id="sibarita">
+        <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                <div>
+                    <img loading="lazy"  class="object-cover object-left w-full rounded-lg md:w-48 md:h-full md:rounded-r-none" src="images/sibarita-300x300.png" alt="">
+                </div>
+                
+                <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Ensalada de la casa </h2>
+                    <p class="mt-2 leading-snug text-gray-700 ">
+                        </p>
+                    <p class="mt-1 leading-snug text-gray-700">Mezcla de lechugas. Mozzarella. Cherrys. Pechuga a la brasa. Miel de caña terminada con futos secos
+                       </p>
+                    <div class="mt-2 text-lg font-semibold text-right text-gray-700">5€/8€</div>
+                   
+                </div>
+        </div>
+
+
+        <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Anchoa de santoña </h2>
+                    <p class="mt-2 leading-snug text-gray-700 ">
+                        </p>
+                    <p class="mt-1 leading-snug text-gray-700">Tomate kumato con aceituna negras, tapena y tallos
+                       </p>
+                    <div class="mt-2 text-lg font-semibold text-right text-gray-700">6€/10€</div>
+                   
+                </div>
+        </div>
+       
+        </div>
+        <div class="container mx-auto mt-10 bg-gray-400 md:flex">
+
+
+        <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Ventresca atún  </h2>
+                    <p class="mt-2 leading-snug text-gray-700 ">
+                        </p>
+                    <p class="mt-1 leading-snug text-gray-700">Tomate kumato con aceituna negras, tapena y tallos
+                       </p>
+                    <div class="mt-2 text-lg font-semibold text-right text-gray-700">5€/8€</div>
+                   
+                </div>
+        </div>
+
+        <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Bonito salado </h2>
+                    <p class="mt-2 leading-snug text-gray-700 ">
+                        </p>
+                    <p class="mt-1 leading-snug text-gray-700">Tomate kumato con aceituna negras, tapena y tallos
+                       </p>
+                    <div class="mt-2 text-lg font-semibold text-right text-gray-700">5€/8€</div>
+                   
+                </div>
+        </div>
+        </div>
+
+        <div class="container mx-auto mt-10 bg-gray-400 md:flex">
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                <div>
+                    <img loading="lazy"  class="object-cover object-left w-full rounded-lg md:w-48 md:h-full md:rounded-r-none" src="images/Jamon-Iberico.jpg" alt="">
+                </div>
+                    <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                        <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Jamón ibérico cebo de campo  </h2>
+                        <p class="mt-2 leading-snug text-gray-700 ">
+                            </p>
+                        <p class="mt-1 leading-snug text-gray-700">
+                        </p>
+                        <div class="mt-2 text-lg font-semibold text-right text-gray-700">8€/15€</div>
+                       
+                    </div>
+            </div>
+       
+      
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                    <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                        <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Queso Manchego  </h2>
+                        <p class="mt-2 leading-snug text-gray-700 ">
+                        </p>
+                        <p class="mt-1 leading-snug text-gray-700">
+                        </p>
+                        <div class="mt-2 text-lg font-semibold text-right text-gray-700">8€</div>
+                       
+                    </div>
+            </div>
+        </div>
+
+
+        <div class="container mx-auto mt-10 bg-gray-400 md:flex">
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                <div>
+                    <img class="object-cover object-left w-full rounded-lg md:w-48 md:h-full md:rounded-r-none" src="images/Croquetas2.jpg" alt="">
+                </div>
+                    <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                        <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Croquetas  </h2>
+                        <p class="mt-2 leading-snug text-gray-700 ">
+                            Croquetas de jamón y parmesano caseras
+                        </p>
+                        <p class="mt-1 leading-snug text-gray-700">
+                            Croquetas de rabo de toro caseras
+                        </p>
+                        <div class="mt-2 text-lg font-semibold text-right text-gray-700">1€</div>
+                       
+                    </div>
+            </div>
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                <div>
+                    <img loading="lazy"  class="object-cover object-left w-full rounded-lg md:w-48 md:h-full md:rounded-r-none" src="images/Caballitos1.jpg" alt="">
+                </div>
+                    <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                        <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Caballitos </h2>
+                        <p class="mt-2 leading-snug text-gray-700 ">
+                        </p>
+                        <p class="mt-1 leading-snug text-gray-700">
+                        </p>
+                        <div class="mt-2 text-lg font-semibold text-right text-gray-700">1,50€</div>
+                       
+                    </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto mt-10 bg-gray-400 md:flex">
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                <div>
+                    <img loading="lazy" class="object-cover object-left w-full rounded-lg md:w-48 md:h-full md:rounded-r-none" src="images/Criollas1.jpg" alt="">
+                </div>
+                    <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                        <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Criollas  </h2>
+                        <p class="mt-2 leading-snug text-gray-700 ">
+                            </p>
+                        <p class="mt-1 leading-snug text-gray-700">
+                        </p>
+                        <div class="mt-2 text-lg font-semibold text-right text-gray-700">2,50€</div>
+                       
+                    </div>
+            </div>
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                <div>
+                    <img loading="lazy" class="object-cover object-left w-full rounded-lg md:w-48 md:h-full md:rounded-r-none" src="images/tigre1.jpg" alt="">
+                </div>
+                    <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                        <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Tigres  </h2>
+                        <p class="mt-2 leading-snug text-gray-700 ">
+                        </p>
+                        <p class="mt-1 leading-snug text-gray-700">
+                        </p>
+                        <div class="mt-2 text-lg font-semibold text-right text-gray-700">2€</div>
+                       
+                    </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto mt-10 bg-gray-400 md:flex">
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                    <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                        <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Pulpo plancha   </h2>
+                        <p class="mt-2 leading-snug text-gray-700 ">
+                            </p>
+                        <p class="mt-1 leading-snug text-gray-700">
+                        </p>
+                        <div class="mt-2 text-lg font-semibold text-right text-gray-700">12€</div>
+                       
+                    </div>
+            </div>
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                <div>
+                    <img loading="lazy" class="object-cover object-left w-full rounded-lg md:w-48 md:h-full md:rounded-r-none" src="images/Alcachofas-con-foie.jpg" alt="">
+                </div>
+                    <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                        <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Alcachofas con foie   </h2>
+                        <p class="mt-2 leading-snug text-gray-700 ">
+                        </p>
+                        <p class="mt-1 leading-snug text-gray-700">
+                        </p>
+                        <div class="mt-2 text-lg font-semibold text-right text-gray-700">7€/12€</div>
+                       
+                    </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto mt-10 bg-gray-400 md:flex">
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                    <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                        <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Presa ibérica   </h2>
+                        <p class="mt-2 leading-snug text-gray-700 ">
+                            </p>
+                        <p class="mt-1 leading-snug text-gray-700">
+                        </p>
+                        <div class="mt-2 text-lg font-semibold text-right text-gray-700">15€</div>
+                       
+                    </div>
+            </div>
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                    <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                        <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Entrecot vaca gallega   </h2>
+                        <p class="mt-2 leading-snug text-gray-700 ">
+                        </p>
+                        <p class="mt-1 leading-snug text-gray-700">
+                        </p>
+                        <div class="mt-2 text-lg font-semibold text-right text-gray-700">20€</div>
+                       
+                    </div>
+            </div>
+        </div>
+
+        <!-- FLASH BURGUER -->
+        <div class="container mx-auto mt-10 bg-gray-400 md:flex" id="flashburguer">
+           
+
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                <div>
+                    <img loading="lazy" class="object-cover object-left w-full rounded-lg md:w-48 md:h-full md:rounded-r-none" src="images/flashburguer-300x300.png" alt="">
+                </div>
+                
+                <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">La Sibarita </h2>
+                    <p class="mt-2 leading-snug text-gray-700 "> 
+                        </p>
+                    <p class="mt-1 leading-snug text-gray-700">
+                       Deliciosa carne de vacuno mayor, queso cheddar , laminado de kumato , tierna cebolla morada y mezclum de lechugas Nuestros menús incluye: <strong>Burguer, patatas, finguer o alitas y una bebida</strong></p>
+                    <div class="mt-2 text-lg font-semibold text-right text-gray-700">9,99 €</div>
+                   
+                </div>
+            </div>
+
+            
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+
+                 <div>
+                    <img loading="lazy" class="object-cover object-left w-full rounded-lg md:w-48 md:h-full md:rounded-r-none" src="images/Burguer.jpg" alt="">
+                </div>
+                
+                <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">La Iberian </h2>
+                    <p class="mt-2 leading-snug text-gray-700 ">Burguer patatas finguer o alitas y una bebida. 
+                        </p>
+                    <p class="mt-1 leading-snug text-gray-700">
+                        Sabrosa carne de cerdo ibérico, queso de D.O. Manchego (Campoveja), rodaja de tomate kumato, 
+                        crujiente de cebolla, lonchas de jamón (cebo de campo) y acompañada de lechuga cogollo</p>
+                    <div class="mt-2 text-lg font-semibold text-right text-gray-700">9,99 €</div>
+                   
+                </div>
+            </div>
+
+            </div>
+        <div class="container mx-auto mt-10 bg-gray-400 md:flex">
+
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                 <div>
+                    <img loading="lazy" class="object-cover object-left w-full rounded-lg md:w-48 md:h-full md:rounded-r-none" src="images/Burguer2.jpg" alt="">
+                </div>
+                
+                <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Burguer Crispy Chiken </h2>
+                    <p class="mt-2 leading-snug text-gray-700 ">
+                        </p>
+                    <p class="mt-1 leading-snug text-gray-700">
+                        100% pechuga de pollo con nuestro crispy de artesano, refrescante lechuga, acompañada de salsa tártara Nuestros menús incluye: <strong>Burguer, patatas, finguer o alitas y una bebida</strong>
+                    </p>
+                    <div class="mt-2 text-lg font-semibold text-right text-gray-700">9,99 €</div>
+                   
+                </div>
+            </div>
+
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                
+                <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Vegana </h2>
+                    <p class="mt-2 leading-snug text-gray-700 ">
+                        </p>
+                    <p class="mt-1 leading-snug text-gray-700">
+                       
+                    Burguer vegana, humus de garbanzos y berenjena, lechuga y tomate Nuestros menús incluye: <strong>Burguer patatas o ensalada y una bebida</strong>
+                    </p>
+                    <div class="mt-2 text-lg font-semibold text-right text-gray-700">9,99 €</div>
+                   
+                </div>
+            </div>
+
+            </div>
+        <div class="container mx-auto mt-10 bg-gray-400 md:flex">
+
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                
+                <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Bocadillo de costilla a la parrilla desmenuzada Argentina  </h2>
+                    <p class="mt-2 leading-snug text-gray-700 "> 
+                        </p>
+                    <p class="mt-1 leading-snug text-gray-700">
+                       
+                    </p>
+                    <div class="mt-2 text-lg font-semibold text-right text-gray-700"> €</div>
+                   
+                </div>
+            </div>
+
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                
+                <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Sándwich    </h2>
+                    <p class="mt-2 leading-snug text-gray-700 "> Próximamente
+                        </p>
+                    <p class="mt-1 leading-snug text-gray-700">
+                       
+                    </p>
+                    <div class="mt-2 text-lg font-semibold text-right text-gray-700"> €</div>
+                    
+                </div>
+            </div>
+
+            </div>
+        <div class="container mx-auto mt-10 bg-gray-400 md:flex">
+
+
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                
+                <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Costillar de cerdo Ibérico </h2>
+                    <p class="mt-2 leading-snug text-gray-700 ">Con salsa BBQ de la casa  y patatas gajo especiales  
+                        </p>
+                    <p class="mt-1 leading-snug text-gray-700">
+                       
+                    </p>
+                    <div class="mt-2 text-lg font-semibold text-right text-gray-700">11,99 €</div>
+                   
+                </div>
+            </div>
+
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                
+                <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Finguers </h2>
+                    <p class="mt-2 leading-snug text-gray-700 ">100% pechuga de pollo  con nuestro especial crispy artesano y 
+                        surtido de nuestras maravillosas salsa caseras* 
+                        </p>
+                    <p class="mt-1 leading-snug text-gray-700">
+                       
+                    </p>
+                    <div class="mt-2 text-lg font-semibold text-right text-gray-700">8 finguers 6€</div>
+                   
+                </div>
+            </div>
+
+            </div>
+        <div class="container mx-auto mt-10 bg-gray-400 md:flex">
+
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                
+                <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Alitas picantonas  </h2>
+                    <p class="mt-2 leading-snug text-gray-700 ">
+                        </p>
+                    <p class="mt-1 leading-snug text-gray-700">
+                       
+                    </p>
+                    <div class="mt-2 text-lg font-semibold text-right text-gray-700">6 alitas 4€</div>
+                   
+                </div>
+            </div>
+
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                
+                <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Palitos de Provolone  </h2>
+                    <p class="mt-2 leading-snug text-gray-700 ">
+                        </p>
+                    <p class="mt-1 leading-snug text-gray-700">
+                       
+                    </p>
+                    <div class="mt-2 text-lg font-semibold text-right text-gray-700">8€</div>
+                   
+                </div>
+            </div>
+
+            </div>
+        <div class="container mx-auto mt-10 bg-gray-400 md:flex">
+
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                
+                <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Potato chesse bacon  </h2>
+                    <p class="mt-2 leading-snug text-gray-700 ">
+                        </p>
+                    <p class="mt-1 leading-snug text-gray-700">Mezcla de patatas, con variado de quesos, bacon cryspy y nuestra salsa ranchera
+                       
+                    </p>
+                    <div class="mt-2 text-lg font-semibold text-right text-gray-700">8€</div>
+                   
+                </div>
+            </div>
+
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Salsas  </h2>
+                    <p class="mt-2 leading-snug text-gray-700 ">
+                       Barbacoa, Ranchera, Tártara, Mojo picón especial, Habanero
+                        </p>
+                    <p class="mt-1 leading-snug text-gray-700">
+                    </p>
+                    <div class="mt-2 text-lg font-semibold text-right text-gray-700">1,50€ c/u</div>
+                </div>
+            </div>
+
+            </div>
+        <div class="container mx-auto mt-10 bg-gray-400 md:flex">
+
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <p class="mt-2 leading-snug text-justify text-gray-900">
+                        Todas nuestras Flash Burguer pueden ir acompañadas de nuestras patatas gajo, fritas, finguers, 
+                        alitas, palitos o ensalada. Tú eliges, nosotros lo elaboramos y te lo llevamos.
+                        </p>
+                    <p class="mt-1 leading-snug text-gray-700">
+                    </p>
+                    <div class="mt-2 text-lg font-semibold text-right text-gray-700"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- ACHO TACOS -->
+        <div class="container mx-auto mt-10 bg-gray-400 md:flex" id="achotaco">
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                    <div>
+                        <img loading="lazy" class="object-cover object-left w-full rounded-lg md:w-48 md:h-full md:rounded-r-none" src="images/Acho-taco-300x300.png" alt="">
+                    </div>
+
+                    <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                        <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">achos jalapeños y queso </h2>
+                        <p class="mt-2 leading-snug text-gray-700 ">
+                            </p>
+                        <p class="mt-1 leading-snug text-gray-700">
+                        </p>
+                        <div class="mt-2 text-lg font-semibold text-right text-gray-700">5,50€</div>
+                    
+                    </div>
+                    
+                    
+            </div>
+
+
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                <div>
+                        <img loading="lazy" class="object-cover object-left w-full rounded-lg md:w-48 md:h-full md:rounded-r-none" src="images/Achos-con-Guacamoles.jpg" alt="">
+                    </div>
+
+                <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                        <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">achos con guacamole </h2>
+                        <p class="mt-2 leading-snug text-gray-700 ">
+                            </p>
+                        <p class="mt-1 leading-snug text-gray-700"> 
+                        </p>
+                        <div class="mt-2 text-lg font-semibold text-right text-gray-700">5,50€</div>
+                    
+                    </div>
+            </div>
+       
+        </div>
+
+        <div class="container mx-auto mt-10 bg-gray-400 md:flex">
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                <div>
+                    <img loading="lazy" class="object-cover object-left w-full rounded-lg md:w-48 md:h-full md:rounded-r-none" src="images/Achos-chilicarne1.jpg" alt="">
+                </div>
+                    <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                        <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">achos chilicarne   </h2>
+                        <p class="mt-2 leading-snug text-gray-700 ">
+                            </p>
+                        <p class="mt-1 leading-snug text-gray-700">
+                        </p>
+                        <div class="mt-2 text-lg font-semibold text-right text-gray-700">6€</div>
+                       
+                    </div>
+            </div>
+            
+       
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                    <div>
+                    <img loading="lazy" class="object-cover object-left w-full rounded-lg md:w-48 md:h-full md:rounded-r-none" src="images/Quesadillas.jpg" alt="">
+                    </div>
+                    <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                        <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Quesadillas queso guacamole y carne a elegir   </h2>
+
+                        <p class="mt-2 leading-snug text-gray-700 ">
+                            <strong>Quesadilla a tu elección más Achos con guacamole o ensalada y bebida</strong>
+                        </p>
+
+                        <p class="mt-2 leading-snug text-gray-700 ">Quesadillas con queso, guacamole y carne de su elección
+                        </p>
+                        <p class="mt-1 leading-snug text-gray-700">Pollo con pico de gallo (encurtido de tomate y cebolla con cilantro en cítricos)</p>
+                        
+                        <p class="mt-1 leading-snug text-gray-700">Ternera con cebolla morada encurtida en cítricos y crujiente de maíz</p>
+                       
+                        <p class="mt-1 leading-snug text-gray-700">Cerdo con pico de gallo y salsa ranchera</p>
+                    
+
+
+                        
+                        <div class="mt-2 text-lg font-semibold text-right text-gray-700">9,99€</div>
+                       
+                    </div>
+            </div>
+
+             </div>
+
+        <div class="container mx-auto mt-10 bg-gray-400 md:flex">
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                <img loading="lazy" class="object-cover object-left w-full rounded-lg md:w-48 md:h-full md:rounded-r-none" src="images/AchoTacos-ternera.jpg" alt="">
+                    <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                        <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Acho Tacos    </h2>
+                        <p class="mt-2 leading-snug text-gray-700 ">
+                            <strong>Taco a tu elección más Achos con guacamole o ensalada y bebida</strong>
+                        </p>
+                        
+                        <p class="mt-2 leading-snug text-gray-700 "><strong>Vegano </strong>(salteado de verduras de temporada con nuestro especial guacamole)
+                        </p>
+                        <p class="mt-1 leading-snug text-gray-700">
+                            <strong>Taco de Cochinita Pibil</strong> (Cerdo asado en hoja de plátano, cortado en tiras en fondo de naranja y achiote)
+                        </p>
+                        <p class="mt-1 leading-snug text-gray-700">
+                            <strong>Taco de Tinga de Pollo</strong> (Pechuga de pollo deshilachada en salsa de tomate y vegetales)
+                        </p>
+                        <p class="mt-1 leading-snug text-gray-700">
+                           <strong>Taco Ternera Mexicana </strong> (Ternera estofada desmenuzada en salsa de tomate picante)
+                        </p>
+                        <div class="mt-2 text-lg font-semibold text-right text-gray-700">9,99€</div>
+                       
+                    </div>
+            </div>
+        
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                    <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                        <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Salsas   </h2>
+                        <p class="mt-2 leading-snug text-gray-700 ">
+                            </p>
+                        <p class="mt-1 leading-snug text-gray-700">Barbacoa Ranchera Tártara Mojo picón especial Habanero
+                        </p>
+                        <div class="mt-2 text-lg font-semibold text-right text-gray-700">1,50€</div>
+                        
+                    </div>
+            </div>
+            
+        </div>
+
+      
+
+
+         <!-- POSTRES -->
+        <div class="container mx-auto mt-10 bg-gray-400 md:flex" id="postres">
+        <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                <div>
+                    <img loading="lazy" class="object-cover object-left w-full rounded-lg md:w-48 md:h-full md:rounded-r-none" src="images/Brownie.jpg" alt="">
+                </div>
+                
+                <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">brownie </h2>
+                    <p class="mt-2 leading-snug text-gray-700 ">
+                        </p>
+                    <p class="mt-1 leading-snug text-gray-700"> 
+                       </p>
+                    <div class="mt-2 text-lg font-semibold text-right text-gray-700">3,50€</div>
+                   
+                </div>
+        </div>
+
+
+        <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Tarta sibarita </h2>
+                    <p class="mt-2 leading-snug text-gray-700 ">
+                        </p>
+                    <p class="mt-1 leading-snug text-gray-700">
+                       </p>
+                    <div class="mt-2 text-lg font-semibold text-right text-gray-700">3,50€</div>
+                   
+                </div>
+        </div>
+       
+        </div>
+
+        <div class="container mx-auto mt-10 bg-gray-400 md:flex">
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                    <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                        <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Tarta de Queso   </h2>
+                        <p class="mt-2 leading-snug text-gray-700 ">
+                            </p>
+                        <p class="mt-1 leading-snug text-gray-700">
+                        </p>
+                        <div class="mt-2 text-lg font-semibold text-right text-gray-700">3,50€</div>
+                       
+                    </div>
+            </div>
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                    <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                        <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Tarta de la Abuela    </h2>
+                        <p class="mt-2 leading-snug text-gray-700 ">
+                        </p>
+                        <p class="mt-1 leading-snug text-gray-700">
+                        </p>
+                        <div class="mt-2 text-lg font-semibold text-right text-gray-700">3,50€</div>
+                       
+                    </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto mt-10 bg-gray-400 md:flex">
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                    <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                        <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">coulant    </h2>
+                        <p class="mt-2 leading-snug text-gray-700 ">
+                            </p>
+                        <p class="mt-1 leading-snug text-gray-700">
+                        </p>
+                        <div class="mt-2 text-lg font-semibold text-right text-gray-700">3,50€</div>
+                       
+                    </div>
+            </div>
+            <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                    <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                        <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">pan  de calatrava     </h2>
+                        <p class="mt-2 leading-snug text-gray-700 ">
+                        </p>
+                        <p class="mt-1 leading-snug text-gray-700">
+                        </p>
+                        <div class="mt-2 text-lg font-semibold text-right text-gray-700">3,50€</div>
+                       
+                    </div>
+            </div>
+        </div>
+
+         <!-- POSTRES -->
+        <div class="container mx-auto mt-10 bg-gray-400 md:flex" id="postres">
+        <div class="mx-2 mt-4 rounded-lg md:mx-0 md:ml-2 md:w-1/2 md:flex md:bg-white">
+                <div>
+                    <img loading="lazy" class="object-cover object-left w-full rounded-lg md:w-48 md:h-full md:rounded-r-none" src="images/refrescos.jpeg" alt="">
+                </div>
+                
+                <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase">Bebidas </h2>
+                    <p class="mt-2 leading-snug text-gray-700 ">
+                        Agua 1,5 litros
+                        </p>
+                    <p class="mt-1 leading-snug text-gray-700"> 
+                        Coca-Cola 0,33 cl
+                       </p>
+                       <p class="mt-1 leading-snug text-gray-700"> 
+                           Fanta naranja 0,33 cl
+                       </p>
+                       <p class="mt-1 leading-snug text-gray-700">
+                           Fanta Limón 0,33 cl
+                       </p>
+                       <p class="mt-1 leading-snug text-gray-700"> 
+                           Nestea 0,33 cl
+                       </p>
+                       <p class="mt-1 leading-snug text-gray-700"> 
+                           Aquarius 0,33 cl
+                       </p>
+                       <p class="mt-1 leading-snug text-gray-700"> 
+                           Cerveza 0,33 cl
+                       </p>
+                    <div class="mt-2 text-lg font-semibold text-right text-gray-700">1,50€</div>
+                   
+                </div>
+        </div>
+
+
+        
+       
+        </div>
+
+        <div class="container mx-2 mx-auto mt-4">
+            <br>
+
+        </div>
+
+    </main>
+
+    <div class="btn-callme">
+      <a class="text-4xl "  href="tel:+34868105453" target="_blank" title="Llamar al Restaurante">
+        <i class="text-4xl text-white fa fa-phone" aria-hidden="true"></i>
+      </a>
+    </div>
+    
+    <footer class="w-full text-white bg-secondary">
+        <div class="justify-around md:flex md:flex-row-reverse ">
+            <div class="mt-4 ml-8"><br></div>
+            <!--
+            <div class="mt-4 ml-8">
+                <div class="hover:text-blue-600"><i class="fa fa-facebook"></i> /facebook </div>
+                <div class="hover:text-blue-400"><i class="fa fa-twitter"></i> @platzifood </div>
+                <div class="hover:text-orange-700"><i class="fa fa-instagram"></i> @platzifood</div>
+            </div>
+            -->
+            <ul class="mt-4 mb-4 ml-8 md:list-disc">
+                <li>Teléfono: +34 868 10 54 53 / 670 10 94 72</li>
+                <li>Dirección: Corredera Nº4 Bajo, 30800 Lorca, Murcia, España</li>
+                
+            </ul>
+            <div class="mt-2 ml-8"><br></div>
+        </div>
+    </footer>
+    <script>
+      if ('loading' in HTMLImageElement.prototype) {
+        console.log('El navegador soporta `lazy-loading`...');
+      } else {
+        console.log('`lazy-loading` no soportado...');
+      }
+    </script>
+</body>
+
+</html>

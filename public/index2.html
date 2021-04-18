@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.7/dist/alpine.js" defer></script>
-    <link rel="icon"  href="images/topdev-favicon.png" type="image/png" />
+    <link rel="icon"   href="images/topdev-favicon.png" type="image/png" />
 
 </head>
 
@@ -16,33 +17,34 @@
     <nav x-data="{ open: false }" class="fixed z-10 w-full text-gray-100 bg-base">
         <div class="flex items-center justify-between px-2 text-white bg-blue-600">
             <div class="text-xl font-semibold">
-               TD - Store - <a href="tel:+584147027645" class="ml-2  bg-blue-600 font-semibold rounded text-white">
+                TD - Store -
+                <a href="tel:+584147027645" class="ml-2 font-semibold text-white bg-blue-600 rounded">
                     <i class="fa fa-phone" aria-hidden="true"></i>0414-7027645
-                    </a>
+                </a>
             </div>
             <div class="text-2xl" @click="open = true">&equiv;</div>
         </div>
 
         <div x-show="open" @click.away="open = false">
             <div class="mx-2 mt-1">
-               
+
             </div>
             <div class="justify-around py-1 mx-2 md:flex">
                 <div class="flex">
                     Productos
                 </div>
-               
+
                 <div class="flex">
                     <div class="ml-2"><a href="#jewels">Joyas</a></div>
-                </div> 
-                 <div class="flex">  
-                   
+                </div>
+                <div class="flex">
+
                     <div class="ml-2"><a href="#clocks">Relojes</a></div>
-                    
+
                 </div>
                 <div>
-                   <a href="tel:+584147027645" class="ml-2">
-                    <i class="fa fa-phone" aria-hidden="true"></i> 0414-7027645
+                    <a href="tel:+584147027645" class="ml-2">
+                        <i class="fa fa-phone" aria-hidden="true"></i> 0414-7027645
                     </a> /
                 </div>
             </div>
@@ -50,52 +52,51 @@
     </nav>
 
 
-   
+
 
 
     <div class="btn-callme">
-      <a class="text-4xl "  href="tel:+584147027645" target="_blank" title="Llamar a Store">
-        <i class="text-4xl text-white fa fa-phone" aria-hidden="true"></i>
-      </a>
+        <a class="text-4xl " href="tel:+584147027645" target="_blank" title="Llamar a Store">
+            <i class="text-4xl text-white fa fa-phone" aria-hidden="true"></i>
+        </a>
     </div>
 
 
-     <main class="mb-8 ">
+    <main class="mb-8 ">
 
-         <div class="h-56 bg-bottom bg-no-repeat bg-cover md:h-100 md:bg-center"
-            style="background-image: url(https://images.unsplash.com/photo-1554151447-b9d2197448f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80);">
+        <div class="h-56 bg-bottom bg-no-repeat bg-cover md:h-100 md:bg-center" style="background-image: url(https://images.unsplash.com/photo-1554151447-b9d2197448f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80);">
         </div>
 
         <div clas="mt-10"><br></div>
 
-        <div class="container mx-auto md:flex md:flex-wrap w-full mt-4 " >
-            
-            <div class="max-w bg-white shadow-lg rounded-lg overflow-hidden my-10 md:w-1/2 md:mx-1">
+        <div class="container w-full mx-auto mt-4 md:flex md:flex-wrap ">
+
+            <div class="my-10 overflow-hidden bg-white rounded-lg shadow-lg max-w md:w-1/2 md:mx-1">
                 <div class="px-4 py-2 bg-blue-600">
-                    <h1 class="text-gray-900 font-bold text-3xl uppercase">NIKE AIR</h1>
-                    <p class="text-gray-600 text-sm mt-1">Lorem ipsum facere recusandae voluptatibus</p>
+                    <h1 class="text-3xl font-bold text-gray-900 uppercase">NIKE AIR</h1>
+                    <p class="mt-1 text-sm text-gray-600">Lorem ipsum facere recusandae voluptatibus</p>
                 </div>
-                <img class="h-56 w-full object-cover mt-2" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="NIKE AIR">
+                <img class="object-cover w-full h-56 mt-2" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="NIKE AIR">
                 <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
-                    <h1 class="text-gray-200 font-bold text-xl">$129</h1>
-                    <button class="px-3 py-1 bg-gray-200 text-sm text-gray-900 font-semibold rounded">Add to card</button>
+                    <h1 class="text-xl font-bold text-gray-200">$129</h1>
+                    <button class="px-3 py-1 text-sm font-semibold text-gray-900 bg-gray-200 rounded">Add to card</button>
                 </div>
             </div>
 
 
-            <div class="flex max-w bg-white shadow-lg rounded-lg overflow-hidden">
-                <div class="w-1/2 bg-cover h-56" style="background-image: url('https://images.unsplash.com/photo-1494726161322-5360d4d0eeae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80')">
-                </div> 
+            <div class="flex overflow-hidden bg-white rounded-lg shadow-lg max-w">
+                <div class="w-1/2 h-56 bg-cover" style="background-image: url('https://images.unsplash.com/photo-1494726161322-5360d4d0eeae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80')">
+                </div>
                 <div class="w-1/2 p-4">
-                <h1 class="text-gray-900 font-bold text-2xl">Backpack</h1>
-                <p class="mt-2 text-gray-600 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit In odit exercitationem fuga id nam quia</p>
-                <div class="flex item-center mt-2">
-                    
-                </div>
-                <div class="flex item-center justify-between mt-3">
-                    <h1 class="text-gray-700 font-bold text-xl">$220</h1>
-                    <button class="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded">Add to Card</button>
-                </div>
+                    <h1 class="text-2xl font-bold text-gray-900">Backpack</h1>
+                    <p class="mt-2 text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit In odit exercitationem fuga id nam quia</p>
+                    <div class="flex mt-2 item-center">
+
+                    </div>
+                    <div class="flex justify-between mt-3 item-center">
+                        <h1 class="text-xl font-bold text-gray-700">$220</h1>
+                        <button class="px-3 py-2 text-xs font-bold text-white uppercase bg-gray-800 rounded">Add to Card</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -105,21 +106,19 @@
 
             <div class="mx-2 mt-4 rounded-lg md:mx-0 md:w-1/2 md:flex md:bg-white">
                 <div>
-                    <img class="object-cover object-left w-full h-full rounded-lg md:h-full md:rounded-r-none"
-                        src="./images/Burguer2.jpg" alt="Hamburger">
+                    <img class="object-cover object-left w-full h-full rounded-lg md:h-full md:rounded-r-none" src="./images/Burguer2.jpg" alt="Hamburger">
                 </div>
-                <div
-                    class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
-                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase md:text-lg">Hamburguesa con
-                        Queso</h2>
+                <div class="relative p-2 mx-2 -mt-2 bg-white rounded-lg shadow-lg md:shadow-none md:bg-transparent">
+                    <h2 class="text-xl font-semibold tracking-tight text-gray-900 uppercase md:text-lg">Hamburguesa con Queso
+                    </h2>
                     <p class="leading-snug text-gray-700">Deliciosa hamburguesa con queso y aderezo de chipotle.</p>
                     <div class="mt-2 text-sm font-semibold text-gray-700">MXN $15</div>
                     <div class="mt-2 text-xs text-yellow-600">&starf;&starf;&starf;&starf;&star; / 20 reseñas</div>
                 </div>
             </div>
 
-           
-      
+
+
 
         </div>
 
@@ -128,34 +127,34 @@
 
         </div>
 
-     </main>
+    </main>
 
     <div class="btn-callme">
-      <a href="https://api.whatsapp.com/send?phone=584147027645" target="_blank">
-        <img src="./images/btn_whatsapp.png" alt="Copos Whatsapp" class="drop-whatsapp" />
-      </a>
+        <a href="https://api.whatsapp.com/send?phone=584147027645" target="_blank">
+            <img src="./images/btn_whatsapp.png" alt="Copos Whatsapp" class="drop-whatsapp" />
+        </a>
     </div>
 
     <footer class="w-full text-white bg-secondary">
         <div class="justify-around md:flex md:flex-row-reverse ">
             <div class="mt-4 ml-8"><br></div>
-            
+
             <div class="mt-4 ml-8">
                 <div class="hover:text-blue-600"><i class="fa fa-facebook"></i> facebook </div>
                 <div class="hover:text-blue-400"><i class="fa fa-twitter"></i> @twitter </div>
                 <div class="hover:text-orange-700"><i class="fa fa-instagram"></i> @instagram</div>
             </div>
-            
+
             <ul class="mt-4 mb-4 ml-8 md:list-disc">
                 <li>Teléfono: +58 414-7027645</li>
                 <li>Dirección: Corredera Nº4 xxxxxx</li>
-                
+
             </ul>
             <div class="mt-2 ml-8"><br></div>
         </div>
     </footer>
 
-<script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/app.js"></script>
 </body>
 
 </html>
